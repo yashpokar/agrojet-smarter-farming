@@ -18,10 +18,10 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider opacity-60">Products</h4>
           <ul className="space-y-2 text-sm opacity-80">
-            <li><Link to="/products" className="hover:opacity-100 transition-opacity">AgroBuddy</Link></li>
-            <li><Link to="/products" className="hover:opacity-100 transition-opacity">AgroVault</Link></li>
-            <li><Link to="/products" className="hover:opacity-100 transition-opacity">AgroDesk</Link></li>
-            <li><Link to="/products" className="hover:opacity-100 transition-opacity">AgroFlow</Link></li>
+            <li><Link to="/products/agrobuddy" className="hover:opacity-100 transition-opacity">AgroBuddy</Link></li>
+            <li><Link to="/products/agrovault" className="hover:opacity-100 transition-opacity">AgroVault</Link></li>
+            <li><Link to="/products/agrodesk" className="hover:opacity-100 transition-opacity">AgroDesk</Link></li>
+            <li><Link to="/products/agroflow" className="hover:opacity-100 transition-opacity">AgroFlow</Link></li>
           </ul>
         </div>
 

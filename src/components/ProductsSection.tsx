@@ -1,41 +1,6 @@
 import { motion } from "framer-motion";
-import { MessageSquare, BarChart3, ShoppingBag, Zap } from "lucide-react";
-
-const products = [
-  {
-    icon: MessageSquare,
-    name: "AgroBuddy",
-    tag: "Live",
-    tagColor: "bg-primary text-primary-foreground",
-    description: "WhatsApp-first AI assistant that helps farmers make faster field decisions without downloading an app.",
-    features: ["Crop planning support", "Pest and disease guidance", "Weather-based advice", "Fast answers in simple language"],
-  },
-  {
-    icon: BarChart3,
-    name: "AgroVault",
-    tag: "Live",
-    tagColor: "bg-primary text-primary-foreground",
-    description: "Cold storage management and contract system.",
-    features: ["Farmer contracts", "Stock tracking", "Capacity planning"],
-    url: "https://vault.agrojet.ai",
-  },
-  {
-    icon: ShoppingBag,
-    name: "AgroDesk",
-    tag: "Coming Soon",
-    tagColor: "bg-accent text-accent-foreground",
-    description: "Operating system for agri input shops to manage day-to-day sales, stock, and customer records in one place.",
-    features: ["Digital billing", "Inventory control", "Customer management", "Cleaner shop operations"],
-  },
-  {
-    icon: Zap,
-    name: "AgroFlow",
-    tag: "Coming Soon",
-    tagColor: "bg-accent text-accent-foreground",
-    description: "Forecasting layer designed to connect buyers, sellers, and supply chains with better demand visibility.",
-    features: ["Demand forecasting", "Supply chain optimization", "Buyer-seller coordination", "Regional planning signals"],
-  },
-];
+import { Link } from "react-router-dom";
+import { products } from "@/lib/products";
 
 const ProductsSection = () => (
   <section className="py-24" id="products">
@@ -71,25 +36,33 @@ const ProductsSection = () => (
               </span>
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">{product.name}</h3>
-            <p className="text-muted-foreground mb-4">{product.description}</p>
+            <p className="text-muted-foreground mb-4">{product.shortDescription}</p>
             <ul className="space-y-1">
-              {product.features.map((f) => (
+              {product.shortFeatures.map((f) => (
                 <li key={f} className="text-sm text-muted-foreground flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" />
                   {f}
                 </li>
               ))}
             </ul>
-            {product.url ? (
-              <a
-                href={product.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-semibold text-primary mt-5 hover:opacity-80 transition-opacity"
+            <div className="flex items-center gap-4 mt-5">
+              <Link
+                to={`/products/${product.slug}`}
+                className="inline-flex items-center text-sm font-semibold text-primary hover:opacity-80 transition-opacity"
               >
-                Explore AgroVault
-              </a>
-            ) : null}
+                Learn More
+              </Link>
+              {product.slug === "agrovault" ? (
+                <a
+                  href={product.ctaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-semibold text-primary hover:opacity-80 transition-opacity"
+                >
+                  {product.ctaLabel}
+                </a>
+              ) : null}
+            </div>
           </motion.div>
         ))}
       </div>
