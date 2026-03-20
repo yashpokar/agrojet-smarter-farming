@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { MessageSquare, BarChart3, ShoppingBag, Zap } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/919876543210?text=Hi%20AgroJet";
+const WHATSAPP_URL = "https://wa.me/19714174705?text=Hi%20AgroJet!";
 
 const productDetails = [
   {
@@ -13,26 +13,27 @@ const productDetails = [
     tag: "Live",
     tagColor: "bg-primary text-primary-foreground",
     headline: "WhatsApp-first AI assistant",
-    description: "AgroBuddy lives on WhatsApp so farmers don't need to download any app. Ask about crops, diseases, weather, inputs — get instant, reliable answers powered by AI and real agriculture data.",
-    features: ["Crop decision support", "Disease identification help", "Input recommendations", "Weather-based advisory", "Available 24/7 on WhatsApp"],
+    description: "AgroBuddy lives on WhatsApp so farmers can get help in the flow of their daily work. It supports crop decisions, field-level problem solving, and practical advisory without forcing users to learn a new product.",
+    features: ["Crop planning and stage-wise guidance", "Pest and disease identification support", "Input and spray-related recommendations", "Weather-based advisory for daily decisions", "Available 24/7 on WhatsApp"],
   },
   {
     icon: BarChart3,
     name: "AgroVault",
     tag: "Live",
     tagColor: "bg-primary text-primary-foreground",
-    headline: "Data platform for agri businesses",
-    description: "AgroVault gives retailers, traders, and exporters the data edge. Understand demand patterns, track pricing, and make informed procurement decisions.",
-    features: ["Demand trend analysis", "Pricing intelligence", "Market insights dashboard", "Regional data coverage"],
+    headline: "Cold storage management and contract system",
+    description: "AgroVault is built for the agriculture ecosystem to help cold storage operators manage both farmer agreements and day-to-day storage operations in one system. It brings structure from the start of the season by letting operators create contracts with farmers that define crop type, expected quantity, storage terms, pricing or conditions, and key commitments before produce starts arriving.",
+    features: ["Farmer contract creation with crop, quantity, and storage terms", "Lot-wise and chamber-wise stock tracking", "Entry and exit management with real-time visibility", "Better capacity planning and stronger farmer relationships"],
+    url: "https://vault.agrojet.ai",
   },
   {
     icon: ShoppingBag,
     name: "AgroDesk",
-    tag: "Live",
-    tagColor: "bg-primary text-primary-foreground",
+    tag: "Coming Soon",
+    tagColor: "bg-accent text-accent-foreground",
     headline: "ERP for agri shops",
-    description: "AgroDesk replaces pen-and-paper management with a simple digital platform. Built specifically for Indian agri retailers and input shops.",
-    features: ["Digital billing", "Inventory management", "Customer tracking", "Sales analytics", "Easy to use interface"],
+    description: "AgroDesk is being built to replace pen-and-paper shop management with a simple operating system for agri retailers and input stores. The goal is to reduce daily chaos across billing, stock tracking, and customer handling.",
+    features: ["Digital billing for faster checkout", "Inventory management with clearer stock visibility", "Customer tracking and purchase history", "Sales analytics for better shop decisions", "Built for easy adoption by agri shops"],
   },
   {
     icon: Zap,
@@ -40,8 +41,8 @@ const productDetails = [
     tag: "Coming Soon",
     tagColor: "bg-accent text-accent-foreground",
     headline: "Demand forecasting engine",
-    description: "AgroFlow will connect farmers, shops, and buyers through intelligent demand-supply matching. Predict what's needed, where and when.",
-    features: ["Demand forecasting", "Supply chain optimization", "Farmer-buyer connections", "Regional demand mapping"],
+    description: "AgroFlow is designed to connect farmers, shops, and buyers through better demand forecasting and supply planning. It aims to reduce mismatch across the chain by showing what is needed, where it is needed, and when action should happen.",
+    features: ["Demand forecasting across regions", "Supply chain optimization signals", "Farmer-buyer connection support", "Regional demand mapping for planning"],
   },
 ];
 
@@ -91,6 +92,16 @@ const Products = () => (
                     </li>
                   ))}
                 </ul>
+                {product.url ? (
+                  <a
+                    href={product.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center mt-6 px-5 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
+                  >
+                    Explore AgroVault
+                  </a>
+                ) : null}
               </div>
               <div className={`rounded-2xl bg-muted aspect-[4/3] flex items-center justify-center ${i % 2 === 1 ? "md:order-1" : ""}`}>
                 <product.icon className="text-primary/20" size={80} />

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroFarm from "@/assets/hero-farm.jpg";
 
-const WHATSAPP_URL = "https://wa.me/919876543210?text=Hi%20AgroJet";
+const WHATSAPP_URL = "https://wa.me/19714174705?text=Hi%20AgroJet!";
 
 const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden">

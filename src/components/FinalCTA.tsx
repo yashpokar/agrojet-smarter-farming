@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const WHATSAPP_URL = "https://wa.me/919876543210?text=Hi%20AgroJet";
+const WHATSAPP_URL = "https://wa.me/19714174705?text=Hi%20AgroJet!";
 
 const FinalCTA = () => (
   <section className="py-24 gradient-primary">

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { MessageCircle, Phone } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/919876543210?text=Hi%20AgroJet";
+const WHATSAPP_URL = "https://wa.me/19714174705?text=Hi%20AgroJet!";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
@@ -45,7 +45,7 @@ const Contact = () => {
                   <h3 className="font-bold text-foreground mb-3">Phone</h3>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Phone size={18} className="text-primary" />
-                    <span>+91 98765 43210</span>
+                    <span>+1 971-417-4705</span>
                   </div>
                 </div>
               </div>

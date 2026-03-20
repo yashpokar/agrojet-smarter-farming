@@ -7,32 +7,33 @@ const products = [
     name: "AgroBuddy",
     tag: "Live",
     tagColor: "bg-primary text-primary-foreground",
-    description: "AI assistant on WhatsApp for farmers",
-    features: ["Crop guidance", "Quick answers"],
+    description: "WhatsApp-first AI assistant that helps farmers make faster field decisions without downloading an app.",
+    features: ["Crop planning support", "Pest and disease guidance", "Weather-based advice", "Fast answers in simple language"],
   },
   {
     icon: BarChart3,
     name: "AgroVault",
     tag: "Live",
     tagColor: "bg-primary text-primary-foreground",
-    description: "Insights for agri businesses",
-    features: ["Demand trends", "Pricing intelligence"],
+    description: "Cold storage management and contract system.",
+    features: ["Farmer contracts", "Stock tracking", "Capacity planning"],
+    url: "https://vault.agrojet.ai",
   },
   {
     icon: ShoppingBag,
     name: "AgroDesk",
-    tag: "Live",
-    tagColor: "bg-primary text-primary-foreground",
-    description: "Manage your agri business in one place",
-    features: ["Billing", "Inventory", "Customer management"],
+    tag: "Coming Soon",
+    tagColor: "bg-accent text-accent-foreground",
+    description: "Operating system for agri input shops to manage day-to-day sales, stock, and customer records in one place.",
+    features: ["Digital billing", "Inventory control", "Customer management", "Cleaner shop operations"],
   },
   {
     icon: Zap,
     name: "AgroFlow",
     tag: "Coming Soon",
     tagColor: "bg-accent text-accent-foreground",
-    description: "Predict supply. Match demand.",
-    features: ["Demand forecasting", "Supply chain optimization"],
+    description: "Forecasting layer designed to connect buyers, sellers, and supply chains with better demand visibility.",
+    features: ["Demand forecasting", "Supply chain optimization", "Buyer-seller coordination", "Regional planning signals"],
   },
 ];
 
@@ -79,6 +80,16 @@ const ProductsSection = () => (
                 </li>
               ))}
             </ul>
+            {product.url ? (
+              <a
+                href={product.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm font-semibold text-primary mt-5 hover:opacity-80 transition-opacity"
+              >
+                Explore AgroVault
+              </a>
+            ) : null}
           </motion.div>
         ))}
       </div>

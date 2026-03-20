@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/agrojet-logo.png";
+import Logo from "./logo";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -10,7 +10,7 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/919876543210?text=Hi%20AgroJet";
+const WHATSAPP_URL = "https://wa.me/19714174705?text=Hi%20AgroJet!";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="AgroJet" className="h-9 w-9" />
+          <Logo className="h-9 w-9" />
           <span className="text-xl font-bold text-foreground">AgroJet</span>
         </Link>
 

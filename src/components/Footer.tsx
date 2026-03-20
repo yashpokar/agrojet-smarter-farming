@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/agrojet-logo.png";
+import Logo from "./logo";
 
 const Footer = () => (
   <footer className="bg-foreground text-primary-foreground">
@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
           <div className="flex items-center gap-2 mb-4">
-            <img src={logo} alt="AgroJet" className="h-8 w-8" />
+            <Logo className="h-8 w-8" />
             <span className="text-lg font-bold">AgroJet</span>
           </div>
           <p className="text-sm opacity-70 leading-relaxed">
@@ -45,7 +45,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-sm opacity-50">
-        © {new Date().getFullYear()} AgroJet. All rights reserved.
+        © {new Date().getFullYear()} TECHARDENT INTERNET PVT LTD. All rights reserved.
       </div>
     </div>
   </footer>
