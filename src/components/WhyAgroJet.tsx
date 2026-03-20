@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { MapPin, Smartphone, Brain, Users } from "lucide-react";
 
 const reasons = [
-  { icon: MapPin, title: "Built for Indian Agriculture", description: "Deep understanding of local crops, markets, and challenges." },
-  { icon: Smartphone, title: "Works on WhatsApp", description: "No app download needed. Start with a simple message." },
-  { icon: Brain, title: "AI + Real Market Data", description: "Combining artificial intelligence with ground-level insights." },
-  { icon: Users, title: "For Farmers & Businesses", description: "Tools designed for everyone in the agri value chain." },
+  { icon: MapPin, title: "Built for Indian Agriculture", description: "Designed around local crops, operating realities, and real on-ground challenges." },
+  { icon: Smartphone, title: "AI on Familiar Channels", description: "Our AI reaches users through simple workflows like WhatsApp, without heavy software adoption." },
+  { icon: Brain, title: "Applied AI, Not Hype", description: "We use AI to solve practical agriculture problems, not to create dashboards people do not use." },
+  { icon: Users, title: "For Farmers and Agri Businesses", description: "From advisory to storage to retail operations, AgroJet supports the full value chain." },
 ];
 
 const WhyAgroJet = () => (
@@ -18,6 +18,9 @@ const WhyAgroJet = () => (
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why AgroJet</h2>
+        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          We make AI useful in agriculture by turning it into decisions, workflows, and tools people can actually use every day.
+        </p>
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

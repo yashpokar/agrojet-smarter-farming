@@ -18,10 +18,10 @@ const HeroSection = () => (
         className="max-w-2xl"
       >
         <h1 className="text-4xl md:text-6xl font-extrabold text-primary-foreground leading-tight mb-6 text-balance">
-          Smarter Farming Starts with Better Decisions
+          Better Decisions for Agriculture
         </h1>
         <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-lg">
-          AgroJet helps farmers and agri businesses choose the right crops, predict demand, and manage operations — all in one platform.
+          AgroJet helps farmers and agri businesses make sense of crops, demand, storage, and operations through practical tools powered by data and intelligence.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a

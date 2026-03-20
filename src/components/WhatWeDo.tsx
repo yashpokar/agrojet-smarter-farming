@@ -4,18 +4,18 @@ import { TrendingUp, Lightbulb, LayoutDashboard } from "lucide-react";
 const pillars = [
   {
     icon: TrendingUp,
-    title: "Demand Forecasting",
-    description: "Predict what the market needs before it happens.",
+    title: "Forecast Demand Earlier",
+    description: "See shifts in demand before they turn into missed sales, bad stocking, or weak planning.",
   },
   {
     icon: Lightbulb,
-    title: "Smart Advisory",
-    description: "AI-powered guidance for better crop and business decisions.",
+    title: "Guide Daily Decisions",
+    description: "Get practical support for crop, input, and business choices without adding complexity.",
   },
   {
     icon: LayoutDashboard,
-    title: "Business Management",
-    description: "Run your agri business from one simple platform.",
+    title: "Run Operations Cleanly",
+    description: "Manage storage, contracts, and business workflows through systems built for agriculture.",
   },
 ];
 
@@ -28,9 +28,9 @@ const WhatWeDo = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">What We Do</h2>
-        <p className="text-muted-foreground text-lg max-w-md mx-auto">
-          We help agriculture run on data instead of guesswork.
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">How AgroJet Helps</h2>
+        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          We combine intelligence, software, and agricultural context to make everyday decisions clearer and operations more structured.
         </p>
       </motion.div>
 

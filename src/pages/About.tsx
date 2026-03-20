@@ -12,7 +12,7 @@ const About = () => (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">About AgroJet</h1>
             <p className="text-lg text-muted-foreground">
-              We're building the data layer for Indian agriculture.
+              We're building practical AI and software infrastructure for Indian agriculture.
             </p>
           </motion.div>
         </div>
