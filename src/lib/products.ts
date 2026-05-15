@@ -1,4 +1,4 @@
-import { BarChart3, MessageSquare, ShoppingBag, Zap } from "lucide-react";
+import { BarChart3, Bot, MessageSquare, ShoppingBag, Zap } from "lucide-react";
 
 export const WHATSAPP_URL = "https://wa.me/19714174705?text=Hi%20AgroJet!";
 
@@ -148,6 +148,45 @@ export const products = [
       "Aggregate signals across regions, crop movement, and supply-demand patterns.",
       "Convert those signals into planning visibility for businesses across the chain.",
       "Use forecast-driven decisions to improve coordination between supply and market demand.",
+    ],
+    ctaLabel: "Talk to Us on WhatsApp",
+    ctaHref: WHATSAPP_URL,
+    ctaExternal: true,
+  },
+  {
+    slug: "agroveer",
+    icon: Bot,
+    name: "AgroVeer",
+    tag: "Concept",
+    tagColor: "bg-secondary text-secondary-foreground",
+    headline: "AI-powered targeted weed-killing machine",
+    shortDescription: "A machine that spots weeds around crops and sprays only where needed.",
+    shortFeatures: ["Weed detection around crops", "Targeted spot spraying", "Lower herbicide use", "Reduced manual weeding"],
+    description:
+      "AgroVeer is an in-development field machine designed to identify weeds growing around crops and apply herbicide only on the suspected weed, instead of blanket spraying entire fields. The goal is to reduce chemical use, protect the crop, and cut the labor burden of manual weed control.",
+    problem:
+      "Manual weeding is slow and expensive, and blanket herbicide spraying wastes inputs, stresses the crop, and adds avoidable chemical load to the soil. Farmers need a way to act on weeds precisely, not broadly.",
+    builtFor: [
+      "Farmers managing weed pressure in row and field crops",
+      "Operations looking to cut herbicide costs without losing weed control",
+      "Teams trying to reduce dependence on manual weeding labor",
+    ],
+    features: [
+      "Computer vision to distinguish weeds from the surrounding crop",
+      "Spot-spray actuation that triggers only on suspected weed",
+      "Designed for in-field operation across standard row spacing",
+      "Aimed at lower herbicide volume per acre than blanket spraying",
+      "Built to reduce the manual labor required for weed control",
+    ],
+    outcomes: [
+      "Less herbicide used per acre through targeted application",
+      "Lower crop and soil exposure to unnecessary chemicals",
+      "Reduced labor pressure during weed-management windows",
+    ],
+    workflow: [
+      "The machine moves through the field and scans the area around each crop.",
+      "Onboard vision flags suspected weeds versus the standing crop in real time.",
+      "Herbicide is applied only on the flagged spot instead of the full row or field.",
     ],
     ctaLabel: "Talk to Us on WhatsApp",
     ctaHref: WHATSAPP_URL,

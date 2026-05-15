@@ -11,7 +11,7 @@ const Terms = () => (
           <p className="text-sm text-muted-foreground mb-8">Last updated: March 2026</p>
 
           <h2 className="text-xl font-bold text-foreground mt-8 mb-3">1. Introduction</h2>
-          <p className="text-muted-foreground mb-4">Welcome to AgroJet. These Terms of Use govern your access to and use of our platform, products, and services including AgroBuddy, AgroVault, AgroDesk, and AgroFlow.</p>
+          <p className="text-muted-foreground mb-4">Welcome to AgroJet. These Terms of Use govern your access to and use of our platform, products, and services including AgroBuddy, AgroVault, AgroDesk, AgroFlow, and AgroVeer.</p>
 
           <h2 className="text-xl font-bold text-foreground mt-8 mb-3">2. Acceptance of Terms</h2>
           <p className="text-muted-foreground mb-4">By accessing or using AgroJet services, you agree to be bound by these terms. If you do not agree, please do not use our services.</p>

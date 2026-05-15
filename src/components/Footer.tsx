@@ -22,6 +22,7 @@ const Footer = () => (
             <li><Link to="/products/agrovault" className="hover:opacity-100 transition-opacity">AgroVault</Link></li>
             <li><Link to="/products/agrodesk" className="hover:opacity-100 transition-opacity">AgroDesk</Link></li>
             <li><Link to="/products/agroflow" className="hover:opacity-100 transition-opacity">AgroFlow</Link></li>
+            <li><Link to="/products/agroveer" className="hover:opacity-100 transition-opacity">AgroVeer</Link></li>
           </ul>
         </div>
 
